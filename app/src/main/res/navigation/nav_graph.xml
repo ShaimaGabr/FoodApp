@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/fragment1">
+
+    <fragment
+        android:id="@+id/fragment1"
+        android:name="com.example.foodtwo.Fragment1"
+        android:label="fragment_1"
+        tools:layout="@layout/fragment_1" >
+        <action
+            android:id="@+id/action_fragment1_to_neerMe"
+            app:destination="@id/neerMe" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragment2"
+        android:name="com.example.foodtwo.Fragment2"
+        android:label="fragment_2"
+        tools:layout="@layout/fragment_2" />
+    <fragment
+        android:id="@+id/fragment3"
+        android:name="com.example.foodtwo.Fragment3"
+        android:label="fragment_3"
+        tools:layout="@layout/fragment_3" />
+    <fragment
+        android:id="@+id/fragment4"
+        android:name="com.example.foodtwo.Fragment4"
+        android:label="fragment_4"
+        tools:layout="@layout/fragment_4" />
+    <fragment
+        android:id="@+id/neerMe"
+        android:name="com.example.foodtwo.NearMe"
+        android:label="fragment_neer_me"
+        tools:layout="@layout/fragment_near_me" >
+        <action
+            android:id="@+id/action_neerMe_to_showItem"
+            app:destination="@id/showItem" />
+    </fragment>
+    <fragment
+        android:id="@+id/showItem"
+        android:name="com.example.foodtwo.ShowItem"
+        android:label="fragment_show_item"
+        tools:layout="@layout/fragment_show_item" >
+        <action
+            android:id="@+id/action_showItem_to_mainCourses"
+            app:destination="@id/mainCourses" />
+    </fragment>
+    <fragment
+        android:id="@+id/mainCourses"
+        android:name="com.example.foodtwo.MainCourses"
+        android:label="fragment_main_courses"
+        tools:layout="@layout/fragment_main_courses" />
+</navigation>
