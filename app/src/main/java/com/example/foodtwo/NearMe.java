@@ -13,11 +13,11 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.core.content.ContextCompat;
 import androidx.fragment.app.Fragment;
-import androidx.fragment.app.FragmentManager;
 import androidx.navigation.Navigation;
 
+import com.example.foodtwo.Clesses.Adapters.PostAdapter;
 import com.example.foodtwo.databinding.FragmentNearMeBinding;
-import com.google.android.material.snackbar.Snackbar;
+import com.example.foodtwo.MVVM.ui.mainActivity.MainActivity;
 
 import java.util.List;
 

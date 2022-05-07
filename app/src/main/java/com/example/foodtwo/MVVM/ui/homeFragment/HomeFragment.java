@@ -1,34 +1,27 @@
-package com.example.foodtwo;
+package com.example.foodtwo.MVVM.ui.homeFragment;
 
 import android.graphics.Color;
 import android.os.Bundle;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
-import androidx.core.content.ContextCompat;
 import androidx.fragment.app.Fragment;
 import androidx.navigation.Navigation;
-import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.PagerSnapHelper;
 import androidx.recyclerview.widget.RecyclerView;
-import androidx.viewpager.widget.ViewPager;
 
-import android.os.Handler;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.view.Window;
-import android.view.WindowManager;
-import android.widget.AbsListView;
-import android.widget.ImageView;
-import android.widget.LinearLayout;
 import android.widget.TextView;
-import android.widget.Toast;
+
+import com.example.foodtwo.DiscountAdapter;
+import com.example.foodtwo.R;
 
 import me.relex.circleindicator.CircleIndicator2;
 
-public class Fragment1 extends Fragment {
+public class HomeFragment extends Fragment {
    RecyclerView recyclerView;
 
      TextView seeAll;
