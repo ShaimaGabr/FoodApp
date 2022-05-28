@@ -7,7 +7,7 @@ import android.view.ViewGroup;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.example.foodtwo.Post;
+import com.example.foodtwo.Clesses.RestFullAPI.model.Post;
 import com.example.foodtwo.R;
 import com.example.foodtwo.databinding.FoodItemBinding;
 
@@ -30,7 +30,7 @@ public class PostAdapter extends RecyclerView.Adapter<PostAdapter.MyViewHolder> 
 
     @Override
     public void onBindViewHolder(@NonNull MyViewHolder holder, int position) {
-        holder.bind(posts.get(position)); // 0 1 2 3 4
+        holder.bind(posts.get(position));
     }
 
     @Override
@@ -54,6 +54,7 @@ public class PostAdapter extends RecyclerView.Adapter<PostAdapter.MyViewHolder> 
         }
 
         private void OnClickedFood(View view) {
+
             listener.onFoodClicked(getAdapterPosition());
         }
 

@@ -3,6 +3,7 @@ package com.example.foodtwo.MVVM.ui.mainActivity;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.content.ContextCompat;
 import androidx.navigation.NavController;
 import androidx.navigation.NavDestination;
 import androidx.navigation.Navigation;
@@ -10,17 +11,26 @@ import androidx.navigation.ui.NavigationUI;
 
 import android.os.Bundle;
 import android.view.View;
+import android.view.Window;
+import android.view.WindowManager;
 import android.widget.ImageView;
 
+import com.example.foodtwo.MVVM.base.BaseActivity;
 import com.example.foodtwo.R;
 import com.google.android.material.bottomappbar.BottomAppBar;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
-public class MainActivity extends AppCompatActivity {
+import dagger.hilt.android.AndroidEntryPoint;
+
+import static java.security.AccessController.getContext;
+
+@AndroidEntryPoint
+public class MainActivity extends BaseActivity {
     BottomNavigationView bottomNavigationView;
     BottomAppBar appbar;
     ImageView fab;
   public static   NavController navController;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

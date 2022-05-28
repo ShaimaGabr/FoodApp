@@ -1,4 +1,4 @@
-package com.example.foodtwo;
+package com.example.foodtwo.Clesses.Adapters;
 
 import android.view.LayoutInflater;
 import android.view.View;
@@ -7,9 +7,8 @@ import android.view.ViewGroup;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.example.foodtwo.R;
 import com.example.foodtwo.databinding.CustomLayoutBinding;
-
-import java.util.List;
 
 public class DiscountAdapter extends RecyclerView.Adapter<DiscountAdapter.DiscountViewHolder> {
     private Integer [] images = {R.drawable.meat,R.drawable.fishh,R.drawable.perger,R.drawable.pizta};

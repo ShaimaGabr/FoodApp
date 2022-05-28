@@ -1,16 +1,15 @@
-package com.example.foodtwo;
+package com.example.foodtwo.Clesses.RestFullAPI.model;
 
-import java.util.List;
+import lombok.Getter;
+import lombok.Setter;
 
+@Getter
+@Setter
 public class Post {
     private int userId;
     private int id;
     private  String title;
     private  String body;
-
-//    public Post(List<Post> body) {
-//    }
-
 
     public int getUserId() {
         return userId;

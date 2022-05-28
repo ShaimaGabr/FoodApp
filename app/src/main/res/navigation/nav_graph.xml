@@ -12,35 +12,44 @@
         tools:layout="@layout/fragment_1" >
         <action
             android:id="@+id/action_fragment1_to_neerMe"
-            app:destination="@id/neerMe" />
+            app:destination="@id/neerMe"
+            app:enterAnim="@anim/fade_in"
+            app:exitAnim="@anim/fade_out"
+            app:popEnterAnim="@anim/fade_in"
+            app:popExitAnim="@anim/fade_out" />
+        <action
+            android:id="@+id/action_fragment1_to_mainCourses"
+            app:destination="@id/mainCourses" />
     </fragment>
     <fragment
         android:id="@+id/fragment2"
-        android:name="com.example.foodtwo.Fragment2"
+        android:name="com.example.foodtwo.MVVM.ui.order.Fragment2"
         android:label="fragment_2"
         tools:layout="@layout/fragment_2" />
     <fragment
         android:id="@+id/fragment3"
-        android:name="com.example.foodtwo.Fragment3"
+        android:name="com.example.foodtwo.MVVM.ui.chat.Fragment3"
         android:label="fragment_3"
         tools:layout="@layout/fragment_3" />
     <fragment
         android:id="@+id/fragment4"
-        android:name="com.example.foodtwo.Fragment4"
+        android:name="com.example.foodtwo.MVVM.ui.profile.Fragment4"
         android:label="fragment_4"
         tools:layout="@layout/fragment_4" />
     <fragment
         android:id="@+id/neerMe"
-        android:name="com.example.foodtwo.NearMe"
+        android:name="com.example.foodtwo.MVVM.ui.nearMe.NearMe"
         android:label="fragment_neer_me"
         tools:layout="@layout/fragment_near_me" >
         <action
             android:id="@+id/action_neerMe_to_showItem"
-            app:destination="@id/showItem" />
+            app:destination="@id/showItem"
+
+             />
     </fragment>
     <fragment
         android:id="@+id/showItem"
-        android:name="com.example.foodtwo.ShowItem"
+        android:name="com.example.foodtwo.MVVM.ui.productDetails.ShowItem"
         android:label="fragment_show_item"
         tools:layout="@layout/fragment_show_item" >
         <action
@@ -49,7 +58,38 @@
     </fragment>
     <fragment
         android:id="@+id/mainCourses"
-        android:name="com.example.foodtwo.MainCourses"
+        android:name="com.example.foodtwo.MVVM.ui.mainCourses.MainCourses"
         android:label="fragment_main_courses"
-        tools:layout="@layout/fragment_main_courses" />
+        tools:layout="@layout/fragment_main_courses" >
+        <action
+            android:id="@+id/action_mainCourses_to_detailsItem"
+            app:destination="@id/detailsItem"
+            app:enterAnim="@anim/bottom_to_up"
+            app:exitAnim="@anim/up_to_bottom"
+
+            app:popExitAnim="@anim/bottom_to_up2" />
+    </fragment>
+    <fragment
+        android:id="@+id/detailsItem"
+        android:name="com.example.foodtwo.MVVM.ui.detailesItem.DetailsItem"
+        android:label="fragment_details_item"
+        tools:layout="@layout/fragment_details_item" >
+        <action
+            android:id="@+id/action_detailsItem_to_detail_Delivery"
+            app:destination="@id/detail_Delivery" />
+    </fragment>
+    <fragment
+        android:id="@+id/detail_Delivery"
+        android:name="com.example.foodtwo.MVVM.ui.detailDelivery.Detail_Delivery"
+        android:label="fragment_detail__delivery"
+        tools:layout="@layout/fragment_detail__delivery" >
+        <action
+            android:id="@+id/action_detail_Delivery_to_endOrder"
+            app:destination="@id/endOrder" />
+    </fragment>
+    <fragment
+        android:id="@+id/endOrder"
+        android:name="com.example.foodtwo.MVVM.ui.endOrder.EndOrder"
+        android:label="fragment_end_order"
+        tools:layout="@layout/fragment_end_order" />
 </navigation>

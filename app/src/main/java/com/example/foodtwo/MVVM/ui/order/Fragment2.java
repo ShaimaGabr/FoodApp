@@ -1,4 +1,4 @@
-package com.example.foodtwo;
+package com.example.foodtwo.MVVM.ui.order;
 
 import android.app.ActionBar;
 import android.graphics.Color;
@@ -16,8 +16,13 @@ import android.view.ViewGroup;
 import android.view.Window;
 import android.view.WindowManager;
 
+import com.example.foodtwo.MVVM.base.BaseFragment;
+import com.example.foodtwo.R;
 
-public class Fragment2 extends Fragment {
+import dagger.hilt.android.AndroidEntryPoint;
+
+@AndroidEntryPoint
+public class Fragment2 extends BaseFragment {
 
 
 
